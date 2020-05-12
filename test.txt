@@ -1,0 +1,22 @@
+aaaaa
+
+
+aws s3 ls s3://session-manager-log-3aa038f40848c61e
+
+
+aws s3 ls s3://session-manager-log-3aa038f40848c61e/test.txt
+
+
+aws s3 presign s3://session-manager-log-3aa038f40848c61e/test.txt --expires-in 180
+
+wget "https://session-manager-log-3aa038f40848c61e.s3.amazonaws.com/test.txt?AWSAccessKeyId=ASIA23342UT7AUYKAKEF&Expires=1589265192&x-amz-security-token=IQoJb3JpZ2luX2VjEPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkgwRgIhAOYtL5df07xtD%2B3q7AL8E9AdRZTeaYGPkddkc5JIRtVkAiEAjKKU8GPl97GscaFV3%2BkKqN1JcB9urdk78RPHGsXXrxIqvgMIQBABGgw3NDcwNDkyMzE2MTQiDFwIRqvXXCtziLE3QSqbA4MT22jWiDdp4fKNxam4owfOz8Po1jQGL7maiOXAl%2FCg591MvI4q5M%2FaozDqVE40D62SiC9m%2FIqGy%2FbatgH0yCq3%2F%2FbB7GHZqUso%2B66kZDA9aZj7hSiTLp0umYu%2FPENkaDmJwzrkVjp2cN3hOPnf7zpJHYrXavq%2FWUaItMEpsGyKtoCQkxprRYANHHuZRrE4uoHFu0dxd1zGZ2So1IMTxCb3Y5pQ1IU8IZ2HhHMeR7xvxp9jhjj5NvpPUi%2B7OOo%2FaYJyLor5totFRCGs1p1CKKG%2FvC6MHzs925zo8DgwNNwTUSQBg8HvJNVt%2FjTfuTHkZ5x8LrwDy%2BI2%2BLybR3Cp1lc1EkM4P9tkzI1a19bZDQ888NMk9hsMsfV6XLq%2FtSdE%2FI70Sj5pGopeV3oEee3wZTpiaWq5byLPwFM44%2BaS4jP8qt0775PdzjTp1WH2SD2rr4ad3kxNtaMbrU6WPMHaYO5L2MaxPQ%2BM7sVkDapG8i5Jh46fXkUf9%2FJ3vX9qjFqOU2xBZcOy%2B126IPyGMe%2B6qBVZySqU%2FLJQwgID2jC5gen1BTrqARgDAc5Ls%2BBrQKF74T%2BHIRGY7p6YJ8q%2Fi6Ypm4gx3BxFEefmYZQc6oPyeFSDl2KTZdEa6oKIcwqqpzzdvNeqZAMdiu4jhb77g9huZKGwYZyrrpMmdnSmtdkUfiw7EUYRio1Xc6DDD9ET%2FHOxIjuWUhUm%2Byjf9BF2uXc%2Bb%2FxJrExNjunNbp369jiBmnM5%2BBd0e1numr1qGKv7K%2F98Va1F0JJwfmRx%2F9cKso5y7J58%2By1AiA9nYp4w%2FSITTHOe5Hl0xI5eYfFrrzDK7bqZh4KSTpOfDFtpBt3FIDeISBS75H%2FG1ms97%2BDonebYgQ%3D%3D&Signature=vIpwz1LN2jNxO2mfFrTGcCysVdw%3D" -O test.txt
+
+
+sh-4.2$ ls
+test.txt
+sh-4.2$ rm test.txt
+sh-4.2$
+
+presign s3://session-manager-log-3aa038f40848c61e/test.txt --expires-in 180
+
+
